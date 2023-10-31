@@ -4,6 +4,7 @@ public class Variables {
     public Semaphore busArrival; // notify a rider on bus arrival
     public Semaphore mutex; // make increment of waitingRiders atomic
     public Semaphore boarded; // boarding the riders
+    public Bus bus; // bus resource
     public int waitingRiders; // keep count of waiting riders
 
     public Variables() {

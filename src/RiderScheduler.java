@@ -17,7 +17,7 @@ public class RiderScheduler implements Runnable{
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            new Thread().start(); // new Thread(new Rider(variables)).start();
+            new Thread(new Rider(variables)).start(); // new Thread(new Rider(variables)).start();
         }
     }
 }
