@@ -1,7 +1,7 @@
 public class RiderScheduler implements Runnable{
     private Variables variables;
     private TimeGenerator timeGenerator;
-    private final int meanTime = 3*1000;
+    private final int meanTime = 30*1000;
 
     public RiderScheduler(Variables variables) {
         this.variables = variables;
@@ -17,7 +17,7 @@ public class RiderScheduler implements Runnable{
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            new Thread(new Rider(variables)).start(); // new Thread(new Rider(variables)).start();
+            new Thread(new Rider(variables)).start();
         }
     }
 }
